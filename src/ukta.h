@@ -9,7 +9,7 @@
 using std::cout;
 using std::endl;
 
-class ukta {
+class Ukta {
 	
 	bool		gameRunning;
 	SDL_Surface*	surfDisplay;
@@ -17,14 +17,14 @@ class ukta {
 	static const int GAME_Y_RES = 600;
 	
 public:
-	ukta();
-	int execute();
+	Ukta();
+	int Execute();
 	
-	bool init();
-	void event(SDL_Event* sdl_event);
-	void loop();
-	void render();
-	void cleanup();
+	bool Init();
+	void Event(SDL_Event* sdl_event);
+	void Loop();
+	void Render();
+	void Cleanup();
 	
 };
 

@@ -1,8 +1,8 @@
-#include "Ukta.h"
+#include "ukta.h"
 
 Ukta::Ukta() {
-	GameRunning = true;
-	SurfDisplay = NULL;
+	gameRunning = true;
+	surfDisplay = NULL;
 }
 
 int Ukta::Execute() {
@@ -13,7 +13,7 @@ int Ukta::Execute() {
 
 	SDL_Event sdl_event;
 
-	while(GameRunning) {
+	while(gameRunning) {
 		while(SDL_PollEvent(&sdl_event)) {
 			Event(&sdl_event);
 		}
@@ -26,7 +26,7 @@ int Ukta::Execute() {
 }
 
 int main(int argc, char* argv[]) {
-	Ukta myApp;
-	return myApp.Execute();
+	Ukta myUkta;
+	return myUkta.Execute();
 }
 

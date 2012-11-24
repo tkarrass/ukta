@@ -1,4 +1,4 @@
-#include "Ukta.h"
+#include "ukta.h"
 
 bool Ukta::Init() {
 
@@ -29,8 +29,8 @@ bool Ukta::Init() {
 	//	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 2);		// AA setting
 /* OpenGL context end */
 
-//	if((SurfDisplay = SDL_SetVideoMode(GAME_X_RES, GAME_Y_RES, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL)						// without   OpenGL
-	if((SurfDisplay = SDL_SetVideoMode(GAME_X_RES, GAME_Y_RES, 32, SDL_HWSURFACE | SDL_GL_DOUBLEBUFFER | SDL_OPENGL)) == NULL)	// implement OpenGL
+//	if((surfDisplay = SDL_SetVideoMode(GAME_X_RES, GAME_Y_RES, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL)						// without   OpenGL
+	if((surfDisplay = SDL_SetVideoMode(GAME_X_RES, GAME_Y_RES, 32, SDL_HWSURFACE | SDL_GL_DOUBLEBUFFER | SDL_OPENGL)) == NULL)	// implement OpenGL
 	{
 		return false;
 	}

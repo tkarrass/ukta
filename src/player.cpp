@@ -1,9 +1,8 @@
 #include "player.h"
 
-Player::Player() : Entity::Entity () {
+Player::Player() : Character::Character () {
 
-	health = 100;
-	std::cout << "called Player constructor. Health:" << health << "\n";
+	std::cout << "called Player constructor. Who to slay?\n";
 
 }
 

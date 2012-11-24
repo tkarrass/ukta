@@ -1,5 +1,4 @@
-#include "ukta.h"
-#include "player.h"
+#include "includeall.h"
 
 Ukta::Ukta() {
 	gameRunning = true;
@@ -27,9 +26,9 @@ int Ukta::Execute() {
 }
 
 int main(int argc, char* argv[]) {
+	Entity* entity = new Entity();
 	Player* player = new Player();
-	Player* player2 = new Player();
-	Player* player3 = new Player();
+	Monster* monster = new Monster();
 
 	Ukta myUkta;
 	return myUkta.Execute();

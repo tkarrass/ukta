@@ -2,12 +2,11 @@
 #define PLAYER_H_
 
 #include <iostream>
-#include "entity.h"
+#include "character.h"
 
-class Player : public Entity {
+class Player : public Character {
 
 private:
-	unsigned health;	
 	
 public:
 	Player();

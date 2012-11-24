@@ -1,8 +1,10 @@
+#include "ukta.h"
 #include "monster.h"
 
 Monster::Monster() : Character::Character () {
 
-	std::cout << "called Monster constructor. ROAR!\n";
+	if (DEBUG)
+		std::cout << "called Monster constructor. ROAR!\n";
 
 }
 

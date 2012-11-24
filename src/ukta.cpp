@@ -8,7 +8,7 @@ Ukta::Ukta() {
 int Ukta::Execute() {
 	if(Init() == false) {
 		cout << "Init failed!\n";
-		return -1;
+		return 1;
 	}
 
 	SDL_Event sdl_event;
@@ -26,9 +26,11 @@ int Ukta::Execute() {
 }
 
 int main(int argc, char* argv[]) {
-	Entity* entity = new Entity();
-	Player* player = new Player();
-	Monster* monster = new Monster();
+	if (DEBUG) {
+		Entity* entity = new Entity();
+		Player* player = new Player();
+		Monster* monster = new Monster();
+	}
 
 	Ukta myUkta;
 	return myUkta.Execute();

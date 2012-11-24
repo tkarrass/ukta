@@ -1,3 +1,4 @@
+#include "ukta.h"
 #include "entity.h"
 
 unsigned Entity::nextID = 1;
@@ -7,7 +8,8 @@ Entity::Entity() {
 	entityID = nextID;
 	nextID ++ ;
 
-	std::cout << "called Entity constructor. entityID:" << entityID << " nextID:" << nextID << "\n";
+	if (DEBUG)
+		std::cout << "called Entity constructor. entityID:" << entityID << " nextID:" << nextID << "\n";
 
 }
 

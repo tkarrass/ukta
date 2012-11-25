@@ -9,7 +9,7 @@ bool Ukta::Init() {
 
 	SDL_WM_SetCaption( "UkTA", "UkTA" );	// WindowCaption, TaskbarTitle
 
-	if((surfDisplay = SDL_SetVideoMode(GAME_X_RES, GAME_Y_RES, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL)
+	if((surfDisplay = SDL_SetVideoMode(GAME_X_RES, GAME_Y_RES, GAME_DEPTH, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL)
 	{
 		return false;
 	}

@@ -1,5 +1,7 @@
 #include "includeall.h"
 
+int keyboardDx, keyboardDy;
+
 Ukta::Ukta() {
 	gameRunning = true;
 	surfDisplay = NULL;

@@ -3,13 +3,12 @@
 
 #define DEBUG true
 
-#include <iostream>
-#include <SDL/SDL.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include "includeall.h"
 
 using std::cout;
 using std::endl;
+
+extern int keyboardDx, keyboardDy;
 
 class Ukta {
 	
@@ -17,6 +16,7 @@ class Ukta {
 	SDL_Surface*	surfDisplay;
 	static const int GAME_X_RES = 640;
 	static const int GAME_Y_RES = 480;
+	static const int GAME_DEPTH = 32;
 	
 public:
 	//

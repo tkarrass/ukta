@@ -12,6 +12,13 @@
 *.la
 *.a
 
-# Project Binary
+# misc
 ukta
+.cproject
+.project
+.settings
+cb.bmp
+ukta.cbp
+ukta.layout
+example.cpp
 

@@ -1,18 +1,18 @@
 #ifndef CHARACTER_H_
 #define CHARACTER_H_
 
-#include <iostream>
-#include "entity.h"
+#include "includeall.h"
 
 class Character : public Entity {
 
-private:
-	unsigned health;	
-	
 public:
+	unsigned health;
+	int x, y;
+	int dx, dy;
+	
 	Character();
+	void action(Playfield, CharacterList*);
 	
 };
 
 #endif
-

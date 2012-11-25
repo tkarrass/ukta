@@ -1,8 +1,7 @@
 #ifndef MONSTER_H_
 #define MONSTER_H_
 
-#include <iostream>
-#include "character.h"
+#include "includeall.h"
 
 class Monster : public Character {
 
@@ -11,6 +10,8 @@ private:
 public:
 	Monster();
 	
+	virtual void action(Playfield, CharacterList*);
+
 };
 
 #endif

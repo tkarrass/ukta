@@ -8,3 +8,4 @@ Player::Player() : Character::Character () {
 
 }
 
+void Player::action(Playfield* pf, CharacterList* chars) { }

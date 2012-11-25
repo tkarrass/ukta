@@ -11,9 +11,9 @@ Monster::Monster() : Character::Character () {
 
 }
 
-void Monster::action(Playfield pf, CharacterList* chars)
+void Monster::action(Playfield* pf, CharacterList* chars)
 {
-	if (pf.tiles[x+dx][y+dy].isCrossable)
+	if (pf->tiles[x+dx][y+dy].isCrossable)
 	{
 		x += dx;
 		y += dy;

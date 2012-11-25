@@ -6,7 +6,5 @@ Character::Character() : Entity::Entity () {
 	dx = 1;
 	dy = 0;
 
-	std::cout << "called Character constructor. Health:" <<health<< "\n";
+	std::cout << "called Character constructor. Health:" << health << "\n";
 }
-
-void Character::action(Playfield pf, CharacterList* chars){}

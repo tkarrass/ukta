@@ -6,5 +6,5 @@ clean:
 	rm -f ./ukta
 
 ukta: src/*.cpp src/*.h
-	g++ -lSDL -lGL -o ukta src/*.cpp
+	g++ -lSDL -o ukta src/*.cpp
 

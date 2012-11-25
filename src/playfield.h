@@ -1,7 +1,8 @@
 #ifndef PLAYFIELD_H_
 #define PLAYFIELD_H_
 
-#include "includeall.h"
+#include "tile.h"
+class Playfield;
 
 #define playfieldSize 10
 const int startx = 5;

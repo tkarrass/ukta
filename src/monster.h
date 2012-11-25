@@ -1,16 +1,19 @@
 #ifndef MONSTER_H_
 #define MONSTER_H_
 
-#include "includeall.h"
+#include "character.h"
+class Playfield;
+class CharacterList;
 
 class Monster : public Character {
 
 private:
-	
+
 public:
 	Monster();
-	
-	virtual void action(Playfield, CharacterList*);
+
+	void action(Playfield*, CharacterList*);
+
 
 };
 
